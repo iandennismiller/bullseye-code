@@ -1,5 +1,43 @@
+body {
+	font-family: monospace;
+}
+
 #image {
 	width: 800px;
 	height: 800px;
 	border: 1px solid;
+	float: left;
+}
+
+#input_box {
+	display: none;
+	position: absolute;
+}
+
+#data_table, #status, #main_control {
+	margin-left: 815px;
+}
+
+#status {
+	background: rgb(240, 240, 240);
+	width: 300px;
+	padding: 3px;
+
+}
+
+#main_control {
+	width: 300px;
+	padding: 3px;
+	text-align: center;
+	font-size: 2em;
+	color: blue;
+	cursor: pointer;
+}
+
+.word, .dist {
+	width: 150px;
+	display: inline-block;
+	border-left: 1px dotted;
+	padding: 3px;
+	border-bottom: 1px dotted;
 }
