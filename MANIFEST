@@ -1,0 +1,13 @@
+setup.py
+bin/bullseye.py
+lib/bottle.py
+lib/Bullseye/Server.py
+lib/Bullseye/__init__.py
+usr/csv/_placeholder.txt
+usr/images/_placeholder.txt
+usr/processed/_placeholder.txt
+usr/public/client.js
+usr/public/favicon.ico
+usr/public/index.html
+usr/public/jquery.min.js
+usr/public/style.css

@@ -24,7 +24,8 @@ setup(name='bullseye_code',
     author = 'Ian Dennis Miller',
     author_email = 'ian@saperea.com',
     url = 'http://bullseye-code.googlecode.com',
-    packages=['bullseye'],
+    packages=['Bullseye'],
+    py_modules=['bottle'],
     long_description= """
     Given raw data containing words arranged within a circular field, this tool provides an 
     interface for (1) coding the words and (2) measuring distance to the center of the field.

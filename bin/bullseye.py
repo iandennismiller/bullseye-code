@@ -1,8 +1,6 @@
-import sys
-sys.path.append("/Users/idm/Code/academic/bullseye-code/lib")
-sys.path.append("/Users/idm/Code/academic/bullseye-code/dep")
+import os
 import Bullseye.Server
 
 if __name__ == "__main__":
-	path = "/Users/idm/Code/academic/bullseye-code"
+	path = os.path.join(os.path.expanduser('~'), "Desktop", "bullseye-code")
 	Bullseye.Server.go('localhost', 4567, path)

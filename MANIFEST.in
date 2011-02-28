@@ -1,0 +1,2 @@
+recursive-include usr *
+recursive-exclude usr *.png *.csv
