@@ -1,3 +1,8 @@
+/*
+(c) 2011 Ian Dennis Miller
+http://bullseye-code.googlecode.com
+*/
+
 var canvas, ctx, img, current_id;
 var state = "up";
 var x0, y0, x1, y1;

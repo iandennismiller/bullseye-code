@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+
+# (c) 2011 Ian Dennis Miller
+# http://bullseye-code.googlecode.com
+
 import os
 import Bullseye.Server
 

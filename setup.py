@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+# (c) 2011 Ian Dennis Miller
+# http://bullseye-code.googlecode.com
+
 import platform, re, sys, os, shutil
 from distutils.core import setup
 

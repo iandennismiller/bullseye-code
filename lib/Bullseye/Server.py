@@ -1,3 +1,6 @@
+# (c) 2011 Ian Dennis Miller
+# http://bullseye-code.googlecode.com
+
 from __future__ import with_statement
 import os, json, shutil, glob
 from bottle import route, run, static_file, post, get, request
