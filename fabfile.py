@@ -5,7 +5,7 @@ def sdist():
     print local('cp wiki/ReadMe.wiki doc/README.txt')
     #print local('cp wiki/InstallWindows.wiki doc/INSTALL-WIN.TXT')
     #print local('cp wiki/InstallUnix.wiki doc/INSTALL-UNIX.TXT')
-    print local('rm -rf build; python setup.py sdist --formats=zip')
+    print local('rm -rf build; python setup.py sdist --formats=zip,gztar')
 
 def tag():
     ver = local('python setup.py --version').rstrip()

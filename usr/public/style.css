@@ -46,3 +46,7 @@ body {
 	padding: 3px;
 	border-bottom: 1px dotted;
 }
+
+.x0, .x1, .y0, .y1 {
+	display: none;
+}

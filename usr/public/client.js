@@ -65,6 +65,10 @@ var handle_keypress = function(e) {
                 var dist = Math.sqrt((xd*xd) + (yd*yd));
                 var msg = "<span class='word'>" + value + "</span>";
                 msg += "<span class='dist'>" + $.sprintf("%0.3f", dist) + "</span>";
+                msg += "<span class='x0'>" + x0 + "</span>";
+                msg += "<span class='y0'>" + y0 + "</span>";
+                msg += "<span class='x1'>" + x1 + "</span>";
+                msg += "<span class='y1'>" + y1 + "</span>";
                 $("#data_table").append("<div>" + msg + "</div>");
                 $("#input_box").fadeOut();
                 $("#text_input").val("");
@@ -88,7 +92,7 @@ var next_image_cb = function(data) {
     if (data.id != undefined) {
         img = new Image();
         img.onload = function() {
-            ctx.drawImage(img, 350, 1200, 1870, 1900, 0, 0, 800, 800);
+            ctx.drawImage(img, 315, 1250, 1870, 1870, 0, 0, 800, 800);
         };
         img.src = data.filename;
         current_id = data.id;
@@ -109,8 +113,13 @@ var submit_data = function() {
         var values = $(entry).children();
         var word = $(values[0]).text();
         var dist = $(values[1]).text();
+        var ex0 = $(values[2]).text();
+        var ey0 = $(values[3]).text();
+        var ex1 = $(values[4]).text();
+        var ey1 = $(values[5]).text();
+
         //console.log(word);
-        data += word + "\t" + dist + "\t";
+        data += word + "\t" + dist + "\t" + ex0 + "\t" + ey0 + "\t" + ex1 + "\t" + ey1 + "\t";
     }
 
     // submit it with ajax

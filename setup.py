@@ -22,7 +22,7 @@ if re.search(r'^Windows', platform.platform()):
     print "Installed Bullseye Code to the start menu."
 
 setup(name='bullseye_code',
-    version='0.1',
+    version='0.1.1',
     description = "Interactively code raw data according to the bullseye paradigm",
     author = 'Ian Dennis Miller',
     author_email = 'ian@saperea.com',
