@@ -5,6 +5,10 @@
 
 VER=0.1.1
 cd /tmp
+if [ -d ~/Desktop/bullseye-code ]
+	echo "~/Desktop/bullseye-code already exists; I don't want to overwrite it"
+	exit 1
+fi
 mkdir ~/Desktop/bullseye-code
 curl -s -o /tmp/bullseye.tgz http://bullseye-code.googlecode.com/files/bullseye_code-$VER.tar.gz
 tar xvfz bullseye.tgz
