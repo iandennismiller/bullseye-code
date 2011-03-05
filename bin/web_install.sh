@@ -5,7 +5,7 @@
 
 VER=0.1.1
 cd /tmp
-if [ -d ~/Desktop/bullseye-code ]
+if [ -d ~/Desktop/bullseye-code ] then
 	echo "~/Desktop/bullseye-code already exists; I don't want to overwrite it"
 	exit 1
 fi
