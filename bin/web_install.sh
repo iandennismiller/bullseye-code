@@ -12,4 +12,6 @@ rm bullseye.tgz
 cd bullseye_code-$VER
 cp -r ./usr ~/Desktop/bullseye-code
 echo "Please enter your password to install bullseye-code"
+python setup.py build
 sudo python setup.py install
+rm -rf /tmp/bullseye_code-$VER
