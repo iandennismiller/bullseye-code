@@ -3,7 +3,7 @@
 
 from __future__ import with_statement
 import os, json, shutil, glob
-from bottle import route, run, static_file, post, get, request
+from bottle import route, run, static_file, post, get, request, response
 
 path = "/tmp"
 
@@ -22,6 +22,8 @@ def server_static(filename):
 
 @route('/images/:filename#.+#')
 def server_static(filename):
+    response.headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, max-age=0'
+    response.headers['Pragma'] = 'no-cache'
     return static_file(filename, root=os.path.join(path, "usr", "images"))
 
 @post('/rpc/store_data')
@@ -36,6 +38,8 @@ def store_data():
 
 @get('/rpc/next_image')
 def next_image():
+    response.headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, max-age=0'
+    response.headers['Pragma'] = 'no-cache'
     files = glob.glob(os.path.join(path, "usr", "images", "*.png"))
     if files:
         filename = os.path.basename(files[0])
